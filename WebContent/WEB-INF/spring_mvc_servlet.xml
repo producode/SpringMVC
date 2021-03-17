@@ -23,7 +23,13 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 	
+	<bean id="validator" class="org.hibernate.validator.HibernateValidator" />
+	
 	<mvc:resources location="/recursos/" mapping="/recursos/**"></mvc:resources>
+	
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+	<property name="basenames" value="resources/messages"></property>
+	</bean>
 
 </beans>
 

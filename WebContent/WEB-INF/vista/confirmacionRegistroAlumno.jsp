@@ -7,7 +7,10 @@
 <title>Confirmacion de registro</title>
 </head>
 <body>
-	<p>El alumno con nombre ${elAlumno.nombre } y apellido ${elAlumno.apellido} se ha registrado con exito</p>
+	<p>El alumno ${elAlumno.nombre } ${elAlumno.apellido } de edad ${elAlumno.edad} se ha registrado con exito</p>
+	<p>Email ${elAlumno.email } y CP: ${elAlumno.codigoPostal }</p>
 	<p>La asignatura escogida es: ${elAlumno.optativa }</p>
+	<p>La ciudad del alumno es: ${elAlumno.ciudadEstudios }</p>
+	<p>Los idiomas del alumno son: ${elAlumno.idiomasAlumno }</p>
 </body>
 </html>
