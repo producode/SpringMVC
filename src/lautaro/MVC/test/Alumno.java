@@ -7,6 +7,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import lautaro.MVC.test.validacionesPersonalizadas.validacionCodigoPostal;
+
 public class Alumno {
 	
 	@NotNull
@@ -28,8 +30,8 @@ public class Alumno {
 	
 	private String idiomasAlumno;
 	
-	
-	@Pattern(regexp="[0-9]{5}", message="solo 5 valores numericos")
+	//@Pattern(regexp="[0-9]{5}", message="solo 5 valores numericos")
+	@validacionCodigoPostal
 	private String codigoPostal;
 
 	public String getIdiomasAlumno() {
